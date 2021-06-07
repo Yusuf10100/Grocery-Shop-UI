@@ -1,6 +1,6 @@
 # grocery_shop
 
-A Flutter App for Grocery Shop.
+A Flutter App for Grocery Shop (In Progress).
 
 ## Demo
 
