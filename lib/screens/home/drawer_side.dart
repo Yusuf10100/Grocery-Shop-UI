@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_shop/config/colors.dart';
 import 'package:grocery_shop/screens/profile/profile.dart';
+import 'package:grocery_shop/screens/review__cart/review_cart.dart';
 
 class DrawerSide extends StatelessWidget {
   Widget listTile({String title, IconData iconData, Function onTap}) {
@@ -69,7 +70,13 @@ class DrawerSide extends StatelessWidget {
               ),
             ),
             listTile(iconData: Icons.home_outlined, title: "Home"),
-            listTile(iconData: Icons.shop_outlined, title: "Review Cart"),
+            listTile(iconData: Icons.shop_outlined, title: "Review Cart",
+            onTap: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => ReviewCart(),
+                  ));
+                }
+            ),
             listTile(
                 iconData: Icons.person_outlined,
                 title: "My Profile",
